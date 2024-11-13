@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="RegisCss.css">
+    <script type="module" src="mainregis.js" defer></script>
+
+</head>
+<body>
+    
+<div class = contenedor>
+    <div class="contenedor__form">
+        <form class="inicioSecion">
+            <h2>Inicio de Sesion</h2>
+            <div class="Redes">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+           
+            </div>
+            <span>Correo y contraseña</span>
+            <div class="contenedor__input">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input class="Mail" type="mail" placeholder="Correo">
+            </div>
+            <div class="contenedor__input">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="Contrasena" type="password" placeholder="Contraseña">
+            </div>
+            <a href="#">Olvidé mi contraseña</a>
+            <button class="button" id="btnInicioSecion">Iniciar sesión</button>
+
+        </form>
+    </div>
+    <div class="contenedor__form">
+        <form class ="registro">
+            <h2>Registrarse</h2>
+            <div class="Redes">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+           
+            </div>
+            <span>Correo y contraseña</span>
+            <div class="contenedor__input">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="mail" placeholder="Correo" class="Mail1">
+            </div>
+            <div class="contenedor__input">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" placeholder="Usuario" class="UsuarioIngresado">
+            </div>
+            <div class="contenedor__input">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" placeholder="Contraseña" class="Contrasena1">
+            </div>
+            <button class="button" id="btnRegistro">Registrarse</button>
+
+        </form>
+    </div>
+
+    <div class="contenedor_bienvenida">
+
+        <div class = "bienvenida_InicioSecion bienvenida">
+            <h3>Bienvenido</h3>
+            <p>Bienvenido a la aplicación de eventos</p>
+            <button class = "button" id = btn--InicioSecion> Ir a iniciar sesión</button>
+        </div>
+        <div class = "bienvenida_Registro bienvenida">
+            <h3>Hola!</h3>
+            <p>Bienvenido a la aplicación de eventos registrate aqui</p>
+            <button class="button" id = btn--Registro> Ir a Registrarse</button>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

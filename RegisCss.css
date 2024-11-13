@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-style: black;
+}
+
+body{
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #B5BFF0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor__form{
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.contenedor__form form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+
+
+}
+
+.contenedor__form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.Redes{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.Redes ion-icon{
+border: solid 1px #c9cccb;
+font-size: 18px;
+border-radius: 6px;
+padding: 8px;
+cursor: pointer;
+}
+
+.contenedor__form span{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contenedor__input{
+
+    width: 300px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #eeeeee;
+    border-radius: 30px;
+}
+
+.contenedor__input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 95%;
+    background-color: inherit;
+}
+
+.contenedor__form a{
+    text-decoration: none;
+     color: black;
+     margin-bottom: 20px;
+    margin-top: 5px;
+
+    }
+.button{
+
+width: 170px;
+height: 50px;
+font-size: 15px;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+margin-top: 10px;
+background-color: #576ac9;
+color: white;
+}
+
+
+
+.registro{
+   transform: translateX(-100%);
+}
+
+.contenedor.Cambio .inicioSecion{
+    transform: translateX(100%);
+}
+.contenedor.Cambio .registro{
+    transform: translateX(0);
+}
+
+
+.contenedor_bienvenida{
+
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: #94A6FF;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    border-radius: 45% 0 0 45%;
+}
+
+.contenedor.Cambio .contenedor_bienvenida{
+    transform: translateX(0);
+    border-radius: 0 45% 45% 0;
+    background-color: #7d93ff;
+}
+
+.contenedor_bienvenida .bienvenida {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+    color: white;
+    transition: transform 0.5s ease-in-out; 
+
+}
+
+.bienvenida_InicioSecion{
+    transform: translateX(100%);
+}
+
+.contenedor_bienvenida h3{
+    font-size: 40px;
+}
+
+.contenedor_bienvenida p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.contenedor.Cambio .bienvenida_InicioSecion{
+    transform: translateX(0);
+}
+
+.contenedor.Cambio .bienvenida_Registro{
+    transform: translateX(-100%);
+}
